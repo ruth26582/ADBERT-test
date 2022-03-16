@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>ADBERT Test</title>
+</head>
+<body>
+  <div class="container">
+    <img src="./image/article.jpg" alt="article">
+    <div class="bg">
+      <img src="./image/background.png" alt="background">
+    </div>
+    <div class="circle">
+      <img src="./image/circle.png" alt="circle">
+    </div>
+  </div>
+
+  <script>
+    $(window).on('scroll', function () {
+      let top = $(this).scrollTop() /3;
+      $('.circle').css('transform', 'rotate(' + top + 'deg)');
+    });
+  </script>
+</body>
+</html>

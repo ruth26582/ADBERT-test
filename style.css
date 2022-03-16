@@ -1,0 +1,57 @@
+body {
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container img {
+  width: 800px;
+}
+
+.bg {
+  position: fixed;
+  bottom: -1%;
+}
+
+.bg img {
+  width: 800px;
+}
+
+.circle {
+  position: fixed;
+  bottom: -0.5%;
+  text-align: center;
+}
+
+.circle img {
+  width: 497px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .container img {
+    width: 400px;
+  }
+
+  .bg {
+    position: fixed;
+    bottom: -1%;
+  }
+
+  .bg img {
+    width: 400px;
+  }
+
+  .circle {
+    position: fixed;
+    bottom: -0.5%;
+    text-align: center;
+  }
+
+  .circle img {
+    width: 248px;
+  }
+}
